@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Joke Generator</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: darkslategrey;
+            height: 100%;
+            width: 100%;
+        }
+
+        .nav_bar {
+            display: flex;
+            font-size: 2em;
+            background: cyan;
+        }
+
+        .title {
+            margin: 13px;
+            padding: 10px;
+            background: rgb(24,17,144);
+            background: radial-gradient(circle, rgba(24,17,144,1) 0%, rgba(9,121,69,0.7287289915966386) 26%, rgba(0,212,255,1) 100%);
+            border-radius: 3px;
+        }
+
+        .container {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        button {
+            margin-bottom: 40px;
+            font-size: 30px;
+            padding: 8px;
+            color: red;
+            font-weight: bold;
+            /* background: linear-gradient(-5deg, red, yellow, green, blue, pink, orange, black, rgb(198, 130, 130), lightgrey); */
+            border-radius: 15px;
+            border-color: blue;
+            text-shadow: aquamarine;
+        }
+        button:hover{
+            color: red;
+            background: linear-gradient(90deg, pink, orange, rgb(142, 142, 184));
+        }
+        textarea {
+            font-size: 18px;
+            caret-color: black;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            text-transform: capitalize;
+            color: blue;
+            text-align: center;
+            box-sizing: border-box;
+            max-width: 90%;
+        }
+        textarea::placeholder{
+            text-align: left;
+        }
+        .footer{
+            display: flex;
+            height: 80px;
+            width: 100%;
+            background: chocolate;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+            
+        }
+        h1{
+            color: aqua;
+        }
+       
+    </style>
+
+</head>
+
+<body>
+    <div class="nav_bar">
+        <strong class="title">It's too Komedy</strong>
+    </div>
+
+    <div class="container">
+        <h1 style="font-size: 35px; margin-top: -2%;">Generate a Unique Joke 😂</h1><br>
+        <button type="submit" class="botton" onclick="showJokes()">Generate</button><br>
+        <textarea name="DisplayJoke" id="DisplayJoke" cols="60" rows="10"
+            placeholder="Joke Will be Display here"></textarea>
+    </div>
+
+    <div class="footer">
+        <strong>Made with ♥ in India &copy;CsCoder.in</strong>
+    </div>
+
+    <script src="Project_JokeGenerator.js"></script>
+</body>
+
+</html>
